@@ -1,0 +1,14 @@
+import random
+
+print("Welcome to the game 'Roll Your Dice' test your luck")
+while True:
+    decision=input("Press 'Enter' to get the number or press 'q' to quit the game")
+    if decision =='q':
+        print("Thanks for playing the game.Save your luck for future games")
+        break
+    elif decision =='':
+        numb=random.randint(1,6)
+        print(f"Your number is {numb}")
+    else:
+         print("Wrong input")
+print("Game over")
